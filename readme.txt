@@ -33,31 +33,31 @@ Facebook, Twitter, Google Plus One social share buttons for Wordpress widget is 
 
 **Regarding plugin administrator** , Facebook, Twitter, Google Plus One social share buttons for Wordpress gives him the opportunity of modifying :
 
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Title"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button opening duration"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button closing duration"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button animation speed"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Title"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button opening duration"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button closing duration"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button animation speed"**
  
 
 = [ CUSTOMIZE SHARE BUTTONS CONTAINER SETTINGS ] =
 
 **Regarding plugin administrator** , Facebook, Twitter, Google Plus One social share buttons for Wordpress gives him the opportunity of modifying :
 
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border style"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border width"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border color"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Background color"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Height"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border style"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border width"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Border color"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Background color"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share buttons container Height"**
 
 
 = [ CUSTOMIZE SHARE BUTTON SETTINGS ] =
 
 **Regarding plugin administrator** , Facebook, Twitter, Google Plus One social share buttons for Wordpress gives him the opportunity of modifying :
 
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border style"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border width"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border color"**
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Background color"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border style"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border width"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Border color"**
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"Share button Background color"**
 
 
 = [ SELECT your SHARE BUTTONS ] =
