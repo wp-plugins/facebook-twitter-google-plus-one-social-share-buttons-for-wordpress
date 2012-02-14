@@ -78,11 +78,11 @@ Facebook, Twitter, Google Plus One social share buttons for Wordpress widget **"
 
 = [ OTHER INFORMATION ] =
 
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Version : 1.0.0
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Copyright © 2012-2013 David DONISA
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Author plugin : David DONISA
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Author E-mail : donimedia-servicetique@orange.fr
-Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Plugin license type : GPL v2.0
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Version : 1.0.0
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Copyright © 2012-2013 David DONISA
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Author plugin : David DONISA
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Author E-mail : donimedia-servicetique@orange.fr
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget Plugin license type : GPL v2.0
 
 
 = [ DOCUMENTATION ] =
