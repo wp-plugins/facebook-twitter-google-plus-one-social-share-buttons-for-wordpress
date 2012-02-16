@@ -100,6 +100,10 @@ Author URI: http://donisocial.donimedia-servicetique.net/
 
 				border: ".$data['social_facebook_ftgssbfw_share_buttons_container_border_style']." ".$data['social_facebook_ftgssbfw_share_buttons_container_border_width']."px #".$data['social_facebook_ftgssbfw_share_buttons_container_border_color'].";	/*  Option */
 
+				font-family: arial,helvetica,sans-serif;
+				font-size: 8pt;
+				font-weight: bold;
+
 			}
 			
 			.social_facebook_ftgssbfw_share_buttons{
@@ -209,7 +213,7 @@ Author URI: http://donisocial.donimedia-servicetique.net/
 						      var share_buttons_source_codes_random_index = Math.floor(share_buttons_total * Math.random());
 
 						      share_buttons.eq(div_box_to_display_random_index).fadeTo(closing_duration,0,function(){
-						        $(this).html(share_buttons_source_codes[share_buttons_source_codes_random_index]).fadeTo(opening_duration,1);
+						        jQuery(this).html(share_buttons_source_codes[share_buttons_source_codes_random_index]).fadeTo(opening_duration,1);
 						      });
 
 
