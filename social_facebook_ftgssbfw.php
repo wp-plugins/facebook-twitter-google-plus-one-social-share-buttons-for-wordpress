@@ -2,16 +2,16 @@
 
 /*
 Plugin Name: Facebook, Twitter, Google Plus One social share buttons for Wordpress
-Plugin URI: http://donisocial.donimedia-servicetique.net/
-Description: With this widget , you can display a customizable jQuery accordion which gathers Facebook social plugins together , on your Wordpress website . <a href="http://www.donimedia-servicetique.net/newsletters" title="Be well informed about our latest creations or updates">Newsletter</a> | <a href="http://www.donimedia-servicetique.net/support-forum-donimedia-servicetique-cms-extensions">Support Forum</a>
-Version: 1.0.0
+Plugin URI: http://donisocial.donimedia-servicetique.net/?p=164
+Description: With this widget , you can display a customizable jQuery array of social share buttons , on your Wordpress website . <a href="http://donisocial.donimedia-servicetique.net/?page_id=9" title="Be well informed about our latest creations or updates">Newsletter</a> | <a href="http://donisocial.donimedia-servicetique.net/?page_id=17">Support Forum</a>
+Version: 1.0.1
 Author: David DONISA
 Author URI: http://donisocial.donimedia-servicetique.net/
 */
 
 
 	/** Make sure that the WordPress bootstrap has run before continuing. */
-	require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );  //  require( 'C:/Documents and Settings/HP DC7600/Mes documents/EasyPHP5.2.10/www/donisocial/wp-load.php' );  //  require( $_SERVER["DOCUMENT_ROOT"].'/donisocial/wp-load.php' );
+	require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );
 
 
 
@@ -99,6 +99,10 @@ Author URI: http://donisocial.donimedia-servicetique.net/
 				background: ".$share_buttons_container_background_color.";
 
 				border: ".$data['social_facebook_ftgssbfw_share_buttons_container_border_style']." ".$data['social_facebook_ftgssbfw_share_buttons_container_border_width']."px #".$data['social_facebook_ftgssbfw_share_buttons_container_border_color'].";	/*  Option */
+
+				font-family: arial,helvetica,sans-serif;
+				font-size: 8pt;
+				font-weight: bold;
 
 			}
 			
@@ -209,7 +213,7 @@ Author URI: http://donisocial.donimedia-servicetique.net/
 						      var share_buttons_source_codes_random_index = Math.floor(share_buttons_total * Math.random());
 
 						      share_buttons.eq(div_box_to_display_random_index).fadeTo(closing_duration,0,function(){
-						        $(this).html(share_buttons_source_codes[share_buttons_source_codes_random_index]).fadeTo(opening_duration,1);
+						        jQuery(this).html(share_buttons_source_codes[share_buttons_source_codes_random_index]).fadeTo(opening_duration,1);
 						      });
 
 
@@ -1043,7 +1047,7 @@ function control(){
 
 
 		/** Make sure that the WordPress bootstrap has run before continuing. */
-		require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );  //  require( 'C:/Documents and Settings/HP DC7600/Mes documents/EasyPHP5.2.10/www/donisocial/wp-load.php' );  //  require( $_SERVER["DOCUMENT_ROOT"].'/donisocial/wp-load.php' );
+		require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );
 
 
 		global $data;

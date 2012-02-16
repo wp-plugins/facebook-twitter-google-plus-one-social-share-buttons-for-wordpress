@@ -6,7 +6,7 @@ Tags: +1, buzz, Digg, Delicious, delicious, email, Facebook, facebook share, fac
 Donate link: http://donisocial.donimedia-servicetique.net/
 Requires at least: 3.0.1
 Tested up to: 3.3.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 	
 Customizable array of social share buttons for Wordpress .
 
@@ -94,7 +94,14 @@ Facebook, Twitter, Google Plus One social share buttons for Wordpress widget doc
 
 = [ CHANGELOG ] =
 
-**Version 1.0.0 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget first version release .
+**Version 1.0.1 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget 1.0.1 version fixes following bugs :
+* **Font family varies from one site to another and may inadvertently increase text font size of social share buttons :** Now text font family of social share buttons container is set to arial , helvetica or sans-serif .
+* **Font size varies from one site to another and may inadvertently increase text font size of social share buttons :** Now text font size of social share buttons container is set to 10 picots .
+* **Social share buttons disappear but do not reappear :** Now , jQuery code is modified to allow this ("$" is replaced by "jquery()")
+* Redundant javascript codes for Digg, Pinterest and Google Plus One are now removed from <head></head> tags .
+
+**Version 1.0.0 :** 
+* Facebook, Twitter, Google Plus One social share buttons for Wordpress widget first version release .
 
 
 == Installation ==	
