@@ -2,9 +2,9 @@
 
 /*
 Plugin Name: Facebook, Twitter, Google Plus One social share buttons for Wordpress
-Plugin URI: http://donisocial.donimedia-servicetique.net/?p=164
-Description: With this widget , you can display a customizable jQuery array of social share buttons , on your Wordpress website . <a href="http://donisocial.donimedia-servicetique.net/?page_id=9" title="Be well informed about our latest creations or updates">Newsletter</a> | <a href="http://donisocial.donimedia-servicetique.net/?page_id=17">Support Forum</a>
-Version: 1.0.1
+Plugin URI: http://donisocial.donimedia-servicetique.net/
+Description: With this widget , you can display a customizable jQuery accordion which gathers Facebook social plugins together , on your Wordpress website . <a href="http://www.donimedia-servicetique.net/newsletters" title="Be well informed about our latest creations or updates">Newsletter</a> | <a href="http://www.donimedia-servicetique.net/support-forum-donimedia-servicetique-cms-extensions">Support Forum</a>
+Version: 1.0.2
 Author: David DONISA
 Author URI: http://donisocial.donimedia-servicetique.net/
 */
@@ -241,26 +241,11 @@ Author URI: http://donisocial.donimedia-servicetique.net/
 		</script>
 
 
-		<script type='text/javascript' src='http://widgets.digg.com/buttons.js'></script>
+		<script type='text/javascript' src='http://widgets.givealink.com/buttons.js'></script>
 		
-		<script type='text/javascript' src='http://assets.pinterest.com/js/pinit.js'></script>
-
-
-		 <script type='text/javascript'> 
-			(function() { 
-		     		var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
-			      li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
-			      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
-			 })(); 
-		 </script>
 
 
 
-
-
-<script type='text/javascript' src='https://apis.google.com/js/plusone.js'>
-  {parsetags: 'explicit'}
-</script>
 
 
 		
@@ -347,8 +332,8 @@ class social_facebook_ftgssbfw {
 								'social_facebook_ftgssbfw_delicious_button' => 'yes',
 								'is_social_facebook_ftgssbfw_delicious_button_first_load' => 'yes',
 
-								'social_facebook_ftgssbfw_digg_button' => 'yes',
-								'is_social_facebook_ftgssbfw_digg_button_first_load' => 'yes',
+								'social_facebook_ftgssbfw_givealink_button' => 'yes',
+								'is_social_facebook_ftgssbfw_givealink_button_first_load' => 'yes',
 
 								'social_facebook_ftgssbfw_facebook_button' => 'yes',
 								'is_social_facebook_ftgssbfw_facebook_button_first_load' => 'yes',
@@ -371,8 +356,8 @@ class social_facebook_ftgssbfw {
 								'social_facebook_ftgssbfw_reddit_button' => 'yes',
 								'is_social_facebook_ftgssbfw_reddit_button_first_load' => 'yes',
 
-								'social_facebook_ftgssbfw_stumbleupon_button' => 'yes',
-								'is_social_facebook_ftgssbfw_stumbleupon_button_first_load' => 'yes',
+								'social_facebook_ftgssbfw_tumblr_button' => 'yes',
+								'is_social_facebook_ftgssbfw_tumblr_button_first_load' => 'yes',
 
 								'social_facebook_ftgssbfw_twitter_button' => 'yes',
 								'is_social_facebook_ftgssbfw_twitter_button_first_load' => 'yes',
@@ -697,24 +682,24 @@ function control(){
 
 
 
-	if ( $data['is_social_facebook_ftgssbfw_digg_button_first_load'] == 'yes' ) {
+	if ( $data['is_social_facebook_ftgssbfw_givealink_button_first_load'] == 'yes' ) {
 
-	  	echo '<p><label><b>Digg</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="yes" checked/>';
-	  	echo ' No <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="no" /></label></p>';
+	  	echo '<p><label><b>givealink</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="yes" checked/>';
+	  	echo ' No <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="no" /></label></p>';
 
-		$data['is_social_facebook_ftgssbfw_digg_button_first_load'] = 'no';
+		$data['is_social_facebook_ftgssbfw_givealink_button_first_load'] = 'no';
 
 	} else {
 
-		if ( $data['social_facebook_ftgssbfw_digg_button'] == 'yes' ) {
+		if ( $data['social_facebook_ftgssbfw_givealink_button'] == 'yes' ) {
 
-		  	echo '<p><label><b>Digg</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="yes" checked/>';
-		  	echo ' No <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="no" /></label></p>';
+		  	echo '<p><label><b>givealink</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="yes" checked/>';
+		  	echo ' No <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="no" /></label></p>';
 
 		} else {
 
-		  	echo '<p><label><b>Digg</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="yes" />';
-		  	echo ' No <input name="social_facebook_ftgssbfw_digg_button" type="radio" value="no" checked/></label></p>';
+		  	echo '<p><label><b>givealink</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="yes" />';
+		  	echo ' No <input name="social_facebook_ftgssbfw_givealink_button" type="radio" value="no" checked/></label></p>';
 
 		};
 	};
@@ -888,24 +873,24 @@ function control(){
 
 
 
-	if ( $data['is_social_facebook_ftgssbfw_stumbleupon_button_first_load'] == 'yes' ) {
+	if ( $data['is_social_facebook_ftgssbfw_tumblr_button_first_load'] == 'yes' ) {
 
-	  	echo '<p><label><b>StumbleUpon</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="yes" checked/>';
-	  	echo ' No <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="no" /></label></p>';
+	  	echo '<p><label><b>tumblr</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="yes" checked/>';
+	  	echo ' No <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="no" /></label></p>';
 
-		$data['is_social_facebook_ftgssbfw_stumbleupon_button_first_load'] = 'no';
+		$data['is_social_facebook_ftgssbfw_tumblr_button_first_load'] = 'no';
 
 	} else {
 
-		if ( $data['social_facebook_ftgssbfw_stumbleupon_button'] == 'yes' ) {
+		if ( $data['social_facebook_ftgssbfw_tumblr_button'] == 'yes' ) {
 
-		  	echo '<p><label><b>StumbleUpon</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="yes" checked/>';
-		  	echo ' No <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="no" /></label></p>';
+		  	echo '<p><label><b>tumblr</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="yes" checked/>';
+		  	echo ' No <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="no" /></label></p>';
 
 		} else {
 
-		  	echo '<p><label><b>StumbleUpon</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="yes" />';
-		  	echo ' No <input name="social_facebook_ftgssbfw_stumbleupon_button" type="radio" value="no" checked/></label></p>';
+		  	echo '<p><label><b>tumblr</b> button <b>:</b> <br /> Yes <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="yes" />';
+		  	echo ' No <input name="social_facebook_ftgssbfw_tumblr_button" type="radio" value="no" checked/></label></p>';
 
 		};
 	};
@@ -1024,14 +1009,14 @@ function control(){
     	$data['social_facebook_ftgssbfw_facebook_app_id'] = attribute_escape($_POST['social_facebook_ftgssbfw_facebook_app_id']);
 
     	$data['social_facebook_ftgssbfw_delicious_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_delicious_button']);
-    	$data['social_facebook_ftgssbfw_digg_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_digg_button']);
+    	$data['social_facebook_ftgssbfw_givealink_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_givealink_button']);
     	$data['social_facebook_ftgssbfw_facebook_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_facebook_button']);
     	$data['social_facebook_ftgssbfw_google_plus_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_google_plus_button']);
     	$data['social_facebook_ftgssbfw_hyves_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_hyves_button']);
     	$data['social_facebook_ftgssbfw_linkedin_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_linkedin_button']);
     	$data['social_facebook_ftgssbfw_pinterest_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_pinterest_button']);
     	$data['social_facebook_ftgssbfw_reddit_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_reddit_button']);
-    	$data['social_facebook_ftgssbfw_stumbleupon_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_stumbleupon_button']);
+    	$data['social_facebook_ftgssbfw_tumblr_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_tumblr_button']);
     	$data['social_facebook_ftgssbfw_twitter_button'] = attribute_escape($_POST['social_facebook_ftgssbfw_twitter_button']);
 
     	$data['social_facebook_ftgssbfw_credit_link'] = attribute_escape($_POST['social_facebook_ftgssbfw_credit_link']);
@@ -1047,7 +1032,7 @@ function control(){
 
 
 		/** Make sure that the WordPress bootstrap has run before continuing. */
-		require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );
+		require( $_SERVER["DOCUMENT_ROOT"].'/wp-load.php' );  //  require( 'C:/Documents and Settings/HP DC7600/Mes documents/EasyPHP5.2.10/www/donisocial/wp-load.php' );  //  require( $_SERVER["DOCUMENT_ROOT"].'/donisocial/wp-load.php' );
 
 
 		global $data;
@@ -1068,20 +1053,32 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_delicious_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
+
+			$widget_code_to_display .= '<div style="position: relative; top: 4px;">';
 			$widget_code_to_display .= '<img src="http://www.delicious.com/static/img/delicious.small.gif" height="10" width="10" alt="Delicious" />';
 			$widget_code_to_display .= '<a href="http://www.delicious.com/save" onclick="window.open(\'http://www.delicious.com/save?v=5&noui&jump=close&url=\'+encodeURIComponent(location.href)+\'&title=\'+encodeURIComponent(document.title), \'delicious\',\'toolbar=no,width=550,height=550\'); return false;"> Delicious !</a>';
+			$widget_code_to_display .= '</div>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
 
 
 
-		if ( $data['social_facebook_ftgssbfw_digg_button'] == 'yes' ) {
+		if ( $data['social_facebook_ftgssbfw_givealink_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
-			$widget_code_to_display .= '<iframe allowtransparency="true" frameborder="0" scrolling="no" src="'.plugins_url( "social_facebook_ftgssbfw/scripts/digg_script.php" , dirname(__FILE__) ).'" style="position: relative; top: 0px; left: 3px; width:100px; height:30px; text-align: center;"></iframe>';
-			$widget_code_to_display .= '</iframe>';
+
+			$widget_code_to_display .= '<div style="position: relative; top: 0px; left: -2px;">';
+			$widget_code_to_display .= '<a href="http://www.givealink.org" title="GiveALink.org: Share your links!" target="_blank">';
+			$widget_code_to_display .= '<img height="20" width="100" src="http://givealink.org/images/ShareLogo258x60.png" alt="GiveALink.org icon">';
+			$widget_code_to_display .= '</a>';
 			$widget_code_to_display .= '</div>';
+
+			$widget_code_to_display .= '</div>';
+
+
+
 
 		};
 
@@ -1090,7 +1087,9 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_facebook_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
-			$widget_code_to_display .= '<iframe src="http://www.facebook.com/plugins/like.php?href='.$data["social_facebook_ftgssbfw_facebook_url_page"].'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId='.$data["social_facebook_ftgssbfw_facebook_app_id"].'" scrolling="no" frameborder="0" style="position: relative; border: none; overflow:hidden; left: 22px; width:450px; height:21px; text-align: center;" allowTransparency="true"></iframe>';
+
+			$widget_code_to_display .= '<iframe src="http://www.facebook.com/plugins/like.php?href='.$data["social_facebook_ftgssbfw_facebook_url_page"].'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId='.$data["social_facebook_ftgssbfw_facebook_app_id"].'" scrolling="no" frameborder="0" style="position: relative; border: none; overflow:hidden; left: 14px; width:450px; height:21px; text-align: center;" allowTransparency="true"></iframe>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
@@ -1100,8 +1099,17 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_google_plus_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
-			$widget_code_to_display .= '<iframe allowtransparency="true" frameborder="0" scrolling="no" src="'.plugins_url( 'social_facebook_ftgssbfw/scripts/google_plus_script.php' , dirname(__FILE__) ).'" style="position: relative; top: 0px; left: 18px; width:100px; height:20px; text-align: center;"></iframe>';
-			$widget_code_to_display .= '</iframe>';
+
+			$widget_code_to_display .= '<script type="text/javascript" src="https://apis.google.com/js/plusone.js">';
+			$widget_code_to_display .= '  {parsetags: \'explicit\'}';
+			$widget_code_to_display .= '</script>';
+			$widget_code_to_display .= '<div style="position: relative; top: 2px;left: 10px; width:100px; height:20px;">';
+
+			$widget_code_to_display .= '<g:plusone size="small" annotation="bubble" width="130" href="'.$data_mysql['social_facebook_ftgssbfw_blog_url'].'" ></g:plusone>';
+
+			$widget_code_to_display .= '<script type="text/javascript">gapi.plusone.go();</script>';
+			$widget_code_to_display .= '</div>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
@@ -1121,8 +1129,12 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_linkedin_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
-			$widget_code_to_display .= '<iframe allowtransparency="true" frameborder="0" scrolling="no" src="'.plugins_url( 'social_facebook_ftgssbfw/scripts/linkedin_script.php' , dirname(__FILE__) ).'" style="position: relative; top: 0px; left: 11px; width:100px; height:20px; text-align: center;"></iframe>';
-			$widget_code_to_display .= '</iframe>';
+
+			$widget_code_to_display .= '<div style="position: relative; top: -0px; width:100px; height:30px;">';
+			$widget_code_to_display .= '<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>';
+			$widget_code_to_display .= '<script type="IN/Share" data-url="'.$data_mysql['social_facebook_ftgssbfw_blog_url'].'" data-counter="right"></script>';
+			$widget_code_to_display .= '</div>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
@@ -1132,7 +1144,12 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_pinterest_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
+
+			$widget_code_to_display .= '<div style="position: relative; top: 3px;">';
 			$widget_code_to_display .= '<a href="http://pinterest.com/pin/create/button/?url='.site_url().'" class="pin-it-button" count-layout="horizontal" target="_blank">Pinteresting !</a>';
+			$widget_code_to_display .= '</div>';
+
+
 			$widget_code_to_display .= '</div>';
 
 		};
@@ -1142,18 +1159,27 @@ function control(){
 		if ( $data['social_facebook_ftgssbfw_reddit_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
+
+
+			$widget_code_to_display .= '<div style="position: relative; top: 2px;">';
 			$widget_code_to_display .= '<a href="http://www.reddit.com/submit" onclick="window.location = \'http://www.reddit.com/submit?url=\' + encodeURIComponent(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a>';
+			$widget_code_to_display .= '</div>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
 
 
 
-		if ( $data['social_facebook_ftgssbfw_stumbleupon_button'] == 'yes' ) {
+		if ( $data['social_facebook_ftgssbfw_tumblr_button'] == 'yes' ) {
 
 			$widget_code_to_display .= '<div class="social_facebook_ftgssbfw_share_buttons">';
-			$widget_code_to_display .= '<iframe allowtransparency="true" frameborder="0" scrolling="no" src="'.plugins_url( 'social_facebook_ftgssbfw/scripts/stumbleupon_script.php' , dirname(__FILE__) ).'" style="position: relative; top: 0px; left: 10px; width:100px; height:20px; text-align: center;"></iframe>';
-			$widget_code_to_display .= '</iframe>';
+
+			$widget_code_to_display .= '<div style="position: relative; top: 0px;">';
+			$widget_code_to_display .= '<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>';
+			$widget_code_to_display .= '<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url(\'http://platform.tumblr.com/v1/share_1.png\') top left no-repeat transparent;">Share on Tumblr</a>';
+			$widget_code_to_display .= '</div>';
+
 			$widget_code_to_display .= '</div>';
 
 		};
