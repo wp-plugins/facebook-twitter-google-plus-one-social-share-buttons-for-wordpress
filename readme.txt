@@ -5,8 +5,8 @@ Plugin URI: http://donisocial.donimedia-servicetique.net/?p=164
 Tags: +1, buzz, Digg, Delicious, delicious, email, Facebook, facebook share, facebook share button, google +1, google buzz, hyves, linkedin, links, mail, page, pinterest, Post, Reddit, shortcode, stumbleupon, twitter, twitter share, twitter share button,voting,facebook like, facebook like box, fb, Like, likebox, connect, publish, Share, social media, social widget, registration, page, wall, feed, social, widget, wordpress, wordpress Facebook, wordpress facebook like, wordpress facebook like box, wordpress fb, wordpress Like, wordpress likebox, wordpress connect, wordpress publish, wordpress Share, wordpress social media, wordpress social widget, wordpress registration, wordpress page, wordpress wall, wordpress feed, wordpress social, wordpress widget
 Donate link: http://donisocial.donimedia-servicetique.net/
 Requires at least: 3.0.1
-Tested up to: 3.3.1
-Stable tag: 1.0.1
+Tested up to: 3.3.2
+Stable tag: 1.0.2
 	
 Customizable array of social share buttons for Wordpress .
 
@@ -93,6 +93,9 @@ Facebook, Twitter, Google Plus One social share buttons for Wordpress widget doc
 
 
 = [ CHANGELOG ] =
+
+**Version 1.0.2 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget 1.0.2 version fixes following bugs :
+* **Excessive use of server cpu due to client-side scripts that refer to server-side scripts .**
 
 **Version 1.0.1 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget 1.0.1 version fixes following bugs :
 * **Font family varies from one site to another and may inadvertently increase text font size of social share buttons :** Now text font family of social share buttons container is set to arial , helvetica or sans-serif .
@@ -191,6 +194,17 @@ Facebook app secret is a number , only known by you and Facebook , which is used
 
 
 == Changelog ==
+
+= 1.0.2 =
+**Version 1.0.2 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget 1.0.2 version fixes following bugs :
+* **Excessive use of server cpu due to client-side scripts that refer to server-side scripts .**
+
+= 1.0.1 =
+**Version 1.0.1 :** Facebook, Twitter, Google Plus One social share buttons for Wordpress widget 1.0.1 version fixes following bugs :
+* **Font family varies from one site to another and may inadvertently increase text font size of social share buttons :** Now text font family of social share buttons container is set to arial , helvetica or sans-serif .
+* **Font size varies from one site to another and may inadvertently increase text font size of social share buttons :** Now text font size of social share buttons container is set to 10 picots .
+* **Social share buttons disappear but do not reappear :** Now , jQuery code is modified to allow this ("$" is replaced by "jquery()")
+* Redundant javascript codes for Digg, Pinterest and Google Plus One are now removed from <head></head> tags .
 
 = 1.0.0 =
 * Facebook, Twitter, Google Plus One social share buttons for Wordpress widget first version .
